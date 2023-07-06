@@ -8,9 +8,30 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      colors: {
+        'whiteF': '#F5F5F5',
+        'darker' : '#EAEAEA',
+        'gray-new': '#858585',
+        'gray-new01': '#999999',
+        'grey-light': '#B0B0B0',
+        'grey-light2': '#858585',
+        'new-blue':'#346BD4',
+      },
+      fontFamily: {
+        'Montserrat': ['Montserrat', 'sans-serif' ],
+        'Lato': ['Lato', 'sans-serif' ],
+      },
+      borderRadius:{
+        '2lg': '0.625rem',
+        '4xl': '1.875rem',
+      },
+      width: {
+        '4.5': '1.125rem',
+      },
+      height: {
+        '4.5': '1.125rem',
+        '7.5': '1.875rem',
       },
     },
   },

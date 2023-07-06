@@ -1,27 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 @tailwind base;
 @tailwind components;
+
+.auth-btn{
+  @apply flex items-center justify-center bg-white rounded-xl;
+}
+.auth-icon {
+  @apply h-3.5 w-3.5;
+}
+.auth-p {
+  @apply flex text-gray-new text-xs text-center;
+}
+.auth-btn>div{
+  @apply flex flex-row md:gap-2 gap-1 py-2.5 md:px-5 px-2;
+}
+.form-label{
+  @apply text-black text-base font-Lato font-normal;
+}
+.form-input{
+  @apply flex placeholder:text-sm placeholder:text-gray-new h-10 rounded-2lg bg-whiteF focus:outline-none hover:bg-darker px-4 mt-2;
+}
+.nav-btn{
+  @apply flex flex-row hover:font-bold gap-2.5 justify-center items-center pr-3;
+}
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
