@@ -1,6 +1,7 @@
 import { CiSearch } from "react-icons/ci";
 import { IoIosNotificationsOutline } from "react-icons/io";
-import Profile from "./Profile";
+// import Profile from "./Profile";
+import Profile from "../Profile";
 
 export default function Header({ className }) {
     return (

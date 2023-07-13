@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function NavBar({ className }) {
     return (
-        <div className={` flex-col text-white bg-black shrink-0 rounded-4xl font-Montserrat p-10 justify-between ${className}`}>
+        <div className={` flex-col text-white bg-black shrink-0 rounded-4xl font-Montserrat p-10 justify-between h-full ${className}`}>
             <div className="flex flex-col gap-12">
                 <h1 className="flex text-4xl font-bold">Board.</h1>
 

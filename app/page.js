@@ -1,10 +1,15 @@
+
+import { getServerSession } from 'next-auth/next'
 import SignIn from "@/components/SignIn";
 
-export default function Home() {
+export default async function Home() {
+  // const session = await getServerSession();
+
   return (
     <>
-      <SignIn/>
+      {/* {session ? (<SignIn />) : (<h1>not pass!</h1>)} */}
+      <SignIn />
     </>
-    
+
   );
 }

@@ -11,7 +11,7 @@ export default function Profile({ className }) {
                     alt='avatar img'
                 />
 
-                <Avatar.Fallback className=' font-semibold text-black text-base absolute top-3 left-3 font-inter' >AV</Avatar.Fallback>
+                <Avatar.Fallback className=' font-semibold text-black text-base absolute top-3 left-3 font-inter'>AV</Avatar.Fallback>
             </Avatar.Root>
         </>
     );

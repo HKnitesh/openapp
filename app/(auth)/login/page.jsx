@@ -3,24 +3,15 @@ import { FcGoogle } from "react-icons/fc";
 import { DiApple } from "react-icons/di";
 import Link from "next/link";
 import { signIn, useSession } from 'next-auth/react';
-import { useEffect } from "react";
-import { useRouter } from "next/navigation"
 
 export default function SignIn() {
-    const { data: session, status } = useSession()
-    const router = useRouter()
-
-    useEffect(() => {
-        if (session?.status === 'authenticated') {
-            router.push('/board')
-        }
-    })
-    // async function googleSignIn() {
-    //     signIn("google", { callbackUrl: "/board" });
-    // }
+    
+    async function googleSignIn() {
+        signIn("google", { callbackUrl: "/board" });
+    }
 
     return (
-        <div className="flex md:flex-row w-screen h-screen">
+        <div className="flex md:flex-row w-screen h-screen ">
             <div className="hidden bg-black md:w-1/3 md:flex items-center justify-center shrink-0">
                 <h1 className="text-whiteF font-bold text-7xl font-Montserrat ">Board.</h1>
             </div>
@@ -34,11 +25,8 @@ export default function SignIn() {
                     </div>
 
                     <div className="flex flex-row justify-between font-Montserrat font-normal w-full ">
-
-                        <button className="auth-btn"
-                            onClick={() => signIn('google')}
-                            // onClick={() => signIn('github')}
-                        >
+                        {/* <SigninButton /> */}
+                        <button className="auth-btn" onClick={googleSignIn}>
                             <div>
                                 <FcGoogle className="auth-icon" />
                                 <p className="auth-p">Sign in with Google</p>

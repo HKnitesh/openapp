@@ -25,5 +25,17 @@
 .nav-btn{
   @apply flex flex-row hover:font-bold gap-2.5 justify-center items-center pr-3;
 }
+.card_div{
+  @apply flex flex-col relative md:w-56 md:h-30 w-36 h-20 text-black shrink-0 rounded-2xl;
+}
+.card_icon{
+  @apply flex absolute md:h-6 md:w-7 h-4.5 w-5 md:right-5 right-3;
+}
+.card_p{
+  @apply font-normal font-Lato md:text-sm text-xs;
+}
+.card_h3{
+  @apply font-bold md:text-2xl text-sm font-sans;
+}
 @tailwind utilities;
 
